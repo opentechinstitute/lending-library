@@ -52,11 +52,9 @@
 
 		<script id="tools" type="text/html">
 		{{#rows}}
-		<div id="{{rowNumber}}" class="tool-box {{#category}}not-{{/category}}available">
-			<span class="tool-box-tool">{{description}}</span>
+		<div id="{{rowNumber}}" class="tool-box {{category}}">
+			<span class="tool-box-tool">{{quote}}</span>
 			<div class="tool-box-bottom {{rowNumber}}">
-				{{#category}} <span class="tool-box-borrowed">ON LOAN</span>{{/category}}
-				{{^category}} <span class="tool-box-borrow btn">BORROW</span>{{/category}}
 				<ul>
 					<li><small>{{interviewee}}, {{title}}</small></li>
 					<li>{{quote}}</li>

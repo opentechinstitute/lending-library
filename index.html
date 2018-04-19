@@ -21,6 +21,7 @@
 		</header>
 		<div id="filters" class="container">
 			<input id="toolSearch" type="search" placeholder="tech.."></input>
+			<input id="catSearch" type="search" placeholder="ecosystem.."></input>
 			<span class="clear sml-button">Clear</span>
 			<span id="showAvailable" class="sml-button">Show All</span>
 		</div>
@@ -58,7 +59,7 @@
 				<ul>
 					<li class="quote">{{quote}}</li>
 					<li><strong>{{interviewee}}{{#title}}, {{title}}{{/title}}</strong></li>
-					<li><small>{{category}}{{#category2}}, {{category2}} {{/category2}}</small></li>
+					<li class="category"><small>{{category}}{{#category2}}, {{category2}} {{/category2}}</small></li>
 					<li><a href="https://opentechinstitute.github.io/t4sjquotes/#{{rowNumber}}"><small>LINK</small></a></li>
 				</ul>
 			</div>

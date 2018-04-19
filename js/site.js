@@ -28,6 +28,12 @@ $(document).on('keyup search', '#toolSearch', function(e) {
   filterTools(text)
 })
 
+$(document).on('keyup search', '#catSearch', function(e) {
+  var text = $(e.target).val().trim().toLowerCase()
+  if (text === '') return clearSearch(e)
+  filterCategory(text)
+})
+
 $(document).on( 'click', '.quote-heading', function(e) {
   var rowNumber = $(this).closest("div").attr("id")
   if ($(this).closest('div').hasClass('selected-tool')) {
@@ -69,6 +75,15 @@ function clearSearch(e) {
 
 function filterTools(text) {
   $('.quote').each(function() {
+  var tool = $(this).html().toLowerCase()
+  if (tool.match(text)) {
+    $(this).parent().parent().parent().removeClass('filtered')
+} else $(this).parent().parent().parent().addClass('filtered')
+  })
+}
+
+function filterCategory(text) {
+  $('.category').each(function() {
   var tool = $(this).html().toLowerCase()
   if (tool.match(text)) {
     $(this).parent().parent().parent().removeClass('filtered')

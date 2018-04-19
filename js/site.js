@@ -68,7 +68,7 @@ function clearSearch(e) {
 }
 
 function filterTools(text) {
-  $('.quote').each(function() {
+  $('.tool-box-tool').each(function() {
   var tool = $(this).html().toLowerCase()
   if (tool.match(text)) {
     $(this).parent().removeClass('filtered')

@@ -70,6 +70,7 @@ function toggleAvailable(state) {
 function clearSearch(e) {
   console.log('clear')
   $('#toolSearch').val('')
+  $('#catSearch').val('')
   drawToolBox(gData)
 }
 

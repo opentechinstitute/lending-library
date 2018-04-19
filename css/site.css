@@ -50,7 +50,9 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 19px 4px
 .tool-box.available {background: #0087ff; color: #fff;}
 .tool-box.available a {border-color: #fff;}
 .tool-box:nth-child(1) {margin-top: 0;}
-.tool-box-tool { display: block; font-size: 26px; padding: 10px 0; text-align: center; width: 100%;
+/*.tool-box-tool { display: block; font-size: 26px; padding: 10px 0; text-align: center; width: 100%;
+  cursor: pointer; font-weight: 700;}*/
+.quote-heading { display: block; font-size: 26px; padding: 10px 0; text-align: center; width: 100%;
   cursor: pointer; font-weight: 700;}
 .tool-box:hover {opacity: .75;}
 .tool-box ul {list-style: none; margin: 20px 0px 0px 0px; padding: 0px;}

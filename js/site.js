@@ -71,7 +71,7 @@ function filterTools(text) {
   $('.quote').each(function() {
   var tool = $(this).html().toLowerCase()
   if (tool.match(text)) {
-    $(this).parent().removeClass('filtered')
-} else $(this).parent().addClass('filtered')
+    $(this).parent().parent().parent().removeClass('filtered')
+} else $(this).parent().parent().parent().addClass('filtered')
   })
 }

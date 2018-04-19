@@ -28,7 +28,7 @@ $(document).on('keyup search', '#toolSearch', function(e) {
   filterTools(text)
 })
 
-$(document).on( 'click', '.tool-box-tool', function(e) {
+$(document).on( 'click', '.quote-heading', function(e) {
   var rowNumber = $(this).closest("div").attr("id")
   if ($(this).closest('div').hasClass('selected-tool')) {
     $('.tool-box-bottom' + '.' + rowNumber).css('display', 'none')
@@ -68,7 +68,7 @@ function clearSearch(e) {
 }
 
 function filterTools(text) {
-  $('.tool-box-tool').each(function() {
+  $('.quote').each(function() {
   var tool = $(this).html().toLowerCase()
   if (tool.match(text)) {
     $(this).parent().removeClass('filtered')

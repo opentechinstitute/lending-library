@@ -25,7 +25,7 @@ ul.nav a:hover {color: #55b6ff; border-color: #55b6ff;}
 #info a {color: #333; border-color: #333;}
 #info p {font-weight: lighter; font-size: 12px; line-height: 1.5em;}
 
-input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 5px 4px; border: none;
+input:not([type=submit]):not([type=file]):not([type=checkbox]) {float: left; margin: 5px 4px; border: none;
   border-bottom: 1px solid #0087ff; background-color: transparent; padding: 0px;
   font-family: Source Sans Pro; color: #acacac; font-size: 16px; height: 25px; width: 45%;}
 

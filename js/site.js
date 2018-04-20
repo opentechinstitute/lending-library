@@ -28,8 +28,9 @@ $(document).on('keyup search', '#toolSearch', function(e) {
   filterTools(text)
 })
 
-$(document).on('keyup search', '#catSearch', function(e) {
+$(document).on('click search', '#catSearch', function(e) {
   var text = $(e.target).val().trim().toLowerCase()
+  console.log(text);
   if (text === '') return clearSearch(e)
   filterCategory(text)
 })

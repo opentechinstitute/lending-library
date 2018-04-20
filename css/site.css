@@ -47,11 +47,21 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]) {float: left; mar
    -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
    display: table; width: 100%;}
 .tool-box a {border-color: #9B9A9A;}
-.tool-box-1 {background: #409dcc; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box; display: block; width: 100%;}
-.tool-box-2 {background: #9209a4; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box; display: block; width: 100%;}
-.tool-box-3 {background: #40cc6f; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box; display: block; width: 100%;}
-.tool-box-4 {background: #cc409d; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box; display: block; width: 100%;}
-.tool-box-5 {background: #cc6f40; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box; display: block; width: 100%;}
+.tool-box-1 {background: #409dcc; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box;
+   -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
+   display: table; width: 100%;}
+.tool-box-2 {background: #9209a4; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box;
+   -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
+   display: table; width: 100%;}
+.tool-box-3 {background: #40cc6f; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box;
+   -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
+   display: table; width: 100%;}
+.tool-box-4 {background: #cc409d; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box;
+   -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
+   display: table; width: 100%;}
+.tool-box-5 {background: #cc6f40; color: #fff; padding: 12px; margin-bottom: 16px; box-sizing: border-box;
+   -mox-box-sizing:border-box; -webkit-column-break-inside:avoid; -moz-column-break-inside:avoid;
+   display: table; width: 100%;}
 .tool-box.available a {border-color: #fff;}
 .tool-box:nth-child(1) {margin-top: 0;}
 /*.tool-box-tool { display: block; font-size: 26px; padding: 10px 0; text-align: center; width: 100%;

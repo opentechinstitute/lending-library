@@ -28,7 +28,7 @@ $(document).on('keyup search', '#toolSearch', function(e) {
   filterTools(text)
 })
 
-$(document).on('click search', '#catSearchList', function(e) {
+$(document).on('click search', '#catSearch', function(e) {
   var text = $(e.target).val().trim().toLowerCase()
   console.log(text);
   if (text === '') return clearSearch(e)

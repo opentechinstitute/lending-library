@@ -28,12 +28,21 @@ $(document).on('keyup search', '#toolSearch', function(e) {
   filterTools(text)
 })
 
-$(document).on('click submit', '#catSearch', function(e) {
-  var text = $(e.target).val().trim().toLowerCase()
-  console.log(text);
-  if (text === '') return clearSearch(e)
-  filterCategory(text)
-})
+// $(document).on('click submit', '#catSearch', function(e) {
+//   var text = $(e.target).val().trim().toLowerCase()
+//   console.log(text)
+//   if (text === '') return clearSearch(e)
+//   filterCategory(text)
+// })
+
+$(document).on('keyup', 'form[name=catSearchForm]', function(e) {
+    // prevent the form from submitting
+    var text = $(e.target).val().trim().toLowerCase()
+    console.log(text)
+    if (text === '') return clearSearch(e)
+    filterCategory(text)
+});
+
 
 $(document).on( 'click', '.quote-heading', function(e) {
   var rowNumber = $(this).closest("div").attr("id")
@@ -71,7 +80,7 @@ function toggleAvailable(state) {
 function clearSearch(e) {
   console.log('clear')
   $('#toolSearch').val('')
-  $('#catSearch').val('')
+  $('form[name=catSearchForm]').val('')
   drawToolBox(gData)
 }
 

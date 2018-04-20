@@ -21,15 +21,17 @@
 		</header>
 		<div id="filters" class="container">
 			<input id="toolSearch" type="search" placeholder="Search for something..."></input>
-			<input list="catSearch" type="submit" placeholder="Explore a category">
+			<form name="catSearchForm">
+			<input list="catSearch" placeholder="Explore a category">
 			<datalist id="catSearch">
 			  <option value="Ecosystem">
 			  <option value="Demographics">
 			  <option value="Practitioner Experiences">
-			  <option value="Stories of Success & Failure">
-			  <option value="Visions & Values">
+			  <option label="Stories of Success & Failure" value="Stories">
+			  <option label="Visions & Values" value="Values">
 			</datalist>
 			</input>
+			</form>
 
 			<span class="clear sml-button">Clear</span>
 		</div>

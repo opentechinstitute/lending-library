@@ -80,7 +80,7 @@ function toggleAvailable(state) {
 function clearSearch(e) {
   console.log('clear')
   $('#toolSearch').val('')
-  $('form[name=catSearchForm]').val('')
+  $('form :input').val('');
   drawToolBox(gData)
 }
 

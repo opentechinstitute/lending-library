@@ -24,11 +24,18 @@
 			<form name="catSearchForm">
 			<input list="catSearch" placeholder="Explore a category">
 			<datalist id="catSearch">
-			  <option value="Ecosystem">
-			  <option value="Demographics">
-			  <option value="Practitioner Experiences">
-			  <option label="Stories of Success & Failure" value="Stories">
-			  <option label="Visions & Values" value="Values">
+			  <option data-value="ecosystem">Ecosystem</option>
+			  <option data-value="demographics">Demographics</option>
+			  <option data-value="practitioner experiences">Practitioner Experiences</option>
+			  <option data-value="Stories of Success and Failure">Stories of Success and Failure</option>
+			  <option data-value="Visions and Values">Visions and Values</option>
+			  <option data-value="Role of technology in the work">Role of technology in the work</option>
+			  <option data-value="Unsung s/heroes">Unsung s/heroes</option>
+			  <option data-value="Funding and Resourcing">Funding and Resourcing</option>
+			  <option data-value="Pathways, Barriers, and Support">Pathways, Barriers, and Support</option>
+			  <option data-value="Community Accountability">Community Accountability</option>
+			  <option data-value="Stories of Failure">Stories of Failure</option>
+			  <option data-value="Stories of Success">Stories of Success</option>
 			</datalist>
 			</input>
 			</form>
@@ -63,7 +70,7 @@
 
 		<script id="tools" type="text/html">
 		{{#rows}}
-		<div id="{{rowNumber}}" class="tool-box {{category}}">
+		<div id="{{rowNumber}}" class="tool-box-{{categories}}">
 			<span class="quote-heading">{{description}}</span>
 			<div class="tool-box-bottom {{rowNumber}}">
 				<ul>
